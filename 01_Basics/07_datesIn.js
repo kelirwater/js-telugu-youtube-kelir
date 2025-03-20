@@ -1,6 +1,6 @@
 //Dates
 
-// //Date constructor
+//Date constructor
 // let myDate = new Date();
 // console.log(myDate.toString());
 // console.log(myDate.toDateString());
@@ -18,13 +18,13 @@
 // console.log(myCreatedDate.toLocaleString());
 
 let myCreatedDate = new Date("04-14-2023")
-// console.log(myCreatedDate.toLocaleString());
+console.log(myCreatedDate.toLocaleString());
 
-// let myTimeStamp = Date.now()
-// console.log(myTimeStamp);
-// console.log(myCreatedDate.getTime());
-// let seconds = Math.floor(Date.now()/1000);
-// console.log(`seconds: ${seconds}`);
+let myTimeStamp = Date.now()
+console.log(myTimeStamp);
+console.log(myCreatedDate.getTime()); //milliseconds
+let seconds = Math.floor(Date.now()/1000);
+console.log(`seconds: ${seconds}`);
 
 // let minutes = Math.floor(seconds/60);
 // console.log(`minutes: ${minutes}`);
@@ -62,16 +62,16 @@ let myCreatedDate = new Date("04-14-2023")
 // console.log(dayOfWeek);
 
 
-let today = new Date()
-console.log(today);
+// let today = new Date()
+// console.log(today);
 
 
-let pastDate = new Date("1997-05-25")
-console.log(pastDate);
+// let pastDate = new Date("1997-05-25")
+// console.log(pastDate);
 
 
-let differenceInMilliseconds = today - pastDate;
+// let differenceInMilliseconds = today - pastDate;
 
-let differenceInDays = Math.floor(differenceInMilliseconds/ (1000*60*60*24))
+// let differenceInDays = Math.floor(differenceInMilliseconds/ (1000*60*60*24))
 
-console.log("The difference in days from today is: " + differenceInDays);
+// console.log("The difference in days from today is: " + differenceInDays);
