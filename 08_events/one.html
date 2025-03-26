@@ -69,22 +69,32 @@
     //clientX, clientY, screenX, screenY
     //altkeym ctrlKey, shiftKey, keyCode
 
-    document.getElementById("images").addEventListener(
+    // document.getElementById("images").addEventListener("click", (e) => {
+    //   console.log("click inside the UI");
+    // });
+
+    // document.getElementById("owl").addEventListener("click", (e) => {
+    //   console.log("click inside the owl");
+    //   e.stopPropagation();
+    // });
+
+    // document.querySelector("#google").addEventListener("click", (e) => {
+    //   e.preventDefault();
+    //   e.stopPropagation();
+    //   console.log("google clicked");
+    // });
+
+    document.querySelector("#images").addEventListener(
       "click",
       (e) => {
-        console.log("click inside the UI");
+        console.log(e.target.tagName);
+        if ((e.target.tagName = "IMG")) {
+          let removeIt = e.target.parentNode;
+          removeIt.remove();
+        }
+        // removeIt.parentNode.removeChild(removeIt)
       },
-      true
+      false
     );
-
-    document.getElementById("owl").addEventListener("click", (e) => {
-      console.log("click inside the owl");
-      e.stopPropagation();
-    });
-
-    document.querySelector("#google").addEventListener("click", (e) => {
-      e.preventDefault();
-      console.log("google clicked");
-    });
   </script>
 </html>
